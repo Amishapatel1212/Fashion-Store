@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store | Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>FASHION STORE</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <section class="checkout-section">
+
+        <h2>Checkout</h2>
+
+        <form onsubmit="event.preventDefault(); alert('Order Placed Successfully!');">
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="text" placeholder="Mobile Number" required>
+
+            <textarea placeholder="Delivery Address" required></textarea>
+
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option>Cash On Delivery</option>
+                <option>Online Payment</option>
+            </select>
+
+            <button type="submit">Place Order</button>
+
+        </form>
+
+    </section>
+
+</body>
+</html>
